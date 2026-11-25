@@ -1,0 +1,62 @@
+dispositivo: cpu
+
+=== Dados
+registros brutos=420551  limpos=420224  de 2009-01-01 00:10:00 a 2017-01-01 00:00:00
+erros de vento (-9999)={'wv (m/s)': 18, 'max. wv (m/s)': 20}  datas repetidas=327  buracos=5
+tokens: treino=49025  validação=7004  teste=14008
+
+=== Busca de hiperparâmetros (objetivo 24 h)
+m=48 n=64 cab=4 blocos=2  parâmetros=236448  perda val=0.2741  tempo=33.7 s
+m=24 n=64 cab=4 blocos=2  parâmetros=236448  perda val=0.2741  tempo=18.1 s
+m=72 n=64 cab=4 blocos=2  parâmetros=236448  perda val=0.2725  tempo=54.2 s
+m=48 n=32 cab=4 blocos=2  parâmetros=94656  perda val=0.2897  tempo=16.5 s
+m=48 n=128 cab=4 blocos=2  parâmetros=667488  perda val=0.2718  tempo=70.7 s
+m=48 n=64 cab=2 blocos=2  parâmetros=236448  perda val=0.2771  tempo=31.4 s
+m=48 n=64 cab=8 blocos=2  parâmetros=236448  perda val=0.2745  tempo=34.6 s
+m=48 n=64 cab=4 blocos=1  parâmetros=186464  perda val=0.2782  tempo=16.0 s
+m=48 n=64 cab=4 blocos=3  parâmetros=286432  perda val=0.2774  tempo=45.1 s
+escolhida: m=48 n=128 cab=4 blocos=2
+
+=== Objetivo: próximos 1 token(s)
+parâmetros: 418260  janelas de treino: 48977  teste: 13960
+  época  1  perda treino=0.1227  perda val=0.0794  (51.6 s)
+  época  2  perda treino=0.0874  perda val=0.0744  (56.6 s)
+  época  3  perda treino=0.0833  perda val=0.0738  (52.4 s)
+  época  4  perda treino=0.0809  perda val=0.0723  (53.4 s)
+  época  5  perda treino=0.0801  perda val=0.0726  (52.9 s)
+  época  6  perda treino=0.0792  perda val=0.0718  (51.7 s)
+  época  7  perda treino=0.0784  perda val=0.0733  (51.3 s)
+  época  8  perda treino=0.0779  perda val=0.0712  (53.2 s)
+  época  9  perda treino=0.0773  perda val=0.0716  (49.8 s)
+  época 10  perda treino=0.0768  perda val=0.0701  (51.2 s)
+  época 11  perda treino=0.0765  perda val=0.0707  (52.2 s)
+  época 12  perda treino=0.0761  perda val=0.0727  (51.3 s)
+  época 13  perda treino=0.0760  perda val=0.0704  (50.0 s)
+  época 14  perda treino=0.0753  perda val=0.0708  (50.3 s)
+  época 15  perda treino=0.0754  perda val=0.0718  (51.0 s)
+menor perda de validação na época 10; tempo total 778.9 s
+teste: MSE modelo=0.0728  persistência=0.1343  dia anterior=0.5411
+MAE de T (°C): modelo=0.396  persistência=0.721
+
+=== Objetivo: próximos 24 token(s)
+parâmetros: 667488  janelas de treino: 48954  teste: 13937
+  época  1  perda treino=0.3481  perda val=0.2765  (48.8 s)
+  época  2  perda treino=0.2762  perda val=0.2643  (48.6 s)
+  época  3  perda treino=0.2615  perda val=0.2611  (50.7 s)
+  época  4  perda treino=0.2518  perda val=0.2671  (54.0 s)
+  época  5  perda treino=0.2424  perda val=0.2667  (52.0 s)
+  época  6  perda treino=0.2339  perda val=0.2777  (53.2 s)
+  época  7  perda treino=0.2239  perda val=0.2753  (52.7 s)
+  época  8  perda treino=0.2135  perda val=0.2872  (52.5 s)
+  época  9  perda treino=0.2054  perda val=0.2935  (53.8 s)
+  época 10  perda treino=0.1967  perda val=0.2906  (54.6 s)
+  época 11  perda treino=0.1888  perda val=0.2874  (53.2 s)
+  época 12  perda treino=0.1822  perda val=0.2871  (53.4 s)
+  época 13  perda treino=0.1757  perda val=0.2928  (53.5 s)
+  época 14  perda treino=0.1705  perda val=0.2968  (53.0 s)
+  época 15  perda treino=0.1660  perda val=0.2986  (53.1 s)
+menor perda de validação na época 3; tempo total 787.1 s
+teste: MSE modelo=0.2787  persistência=0.6234  dia anterior=0.5416
+MAE de T (°C): modelo=1.924  persistência=3.354
+
+figuras e tabelas salvas na pasta resultados/

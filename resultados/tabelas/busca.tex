@@ -1,0 +1,20 @@
+\begin{table}[!t]
+\centering
+\caption{Busca de hiperparâmetros no objetivo de 24 h (4 épocas, 1 a cada 3 janelas de treino). Cada linha altera um único valor da referência; * = escolhida.}
+\label{tab:busca}
+\begin{tabular}{lccccccc}
+\hline
+variação & $m$ & $n$ & cabeças & blocos & parâmetros & MSE val. & tempo (s) \\
+\hline
+referência & 48 & 64 & 4 & 2 & 236.448 & 0,2741 & 34 \\
+m & 24 & 64 & 4 & 2 & 236.448 & 0,2741 & 18 \\
+m & 72 & 64 & 4 & 2 & 236.448 & 0,2725 & 54 \\
+n & 48 & 32 & 4 & 2 & 94.656 & 0,2897 & 17 \\
+n * & 48 & 128 & 4 & 2 & 667.488 & 0,2718 & 71 \\
+cabeças & 48 & 64 & 2 & 2 & 236.448 & 0,2771 & 31 \\
+cabeças & 48 & 64 & 8 & 2 & 236.448 & 0,2745 & 35 \\
+blocos & 48 & 64 & 4 & 1 & 186.464 & 0,2782 & 16 \\
+blocos & 48 & 64 & 4 & 3 & 286.432 & 0,2774 & 45 \\
+\hline
+\end{tabular}
+\end{table}
